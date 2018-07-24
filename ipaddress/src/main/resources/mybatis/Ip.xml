@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<mapper>
+    <mapper namespace = "ip">
+        <select id="byIdadress" parameterType = "String" resultType="org.ipaddress.demo.pojo.Ip">
+            select * from ip where ip_address = #{ip_address}
+        </select>
+    </mapper>
+</mapper>
